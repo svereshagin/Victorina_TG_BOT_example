@@ -89,9 +89,11 @@ def register_handlers(bot):
 async def start_bot():
     register_handlers(bot)
     await bot.polling()
+
+
 async def main():
     await start_bot()
 
 
-if __name__ == "main":
+if __name__ == "__main__":
     asyncio.run(main())
